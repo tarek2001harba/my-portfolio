@@ -9,6 +9,54 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <style type="text/css">
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+</style>
     <title>Home</title>
   </head>
   <body>
@@ -153,6 +201,26 @@
             <input type="submit" value="SUBMIT" />
           </form>
         </div>
+      </section>
+      <div class="ge-bg-div">
+        <div class="quote-container">
+          <h1>
+            I am from <span style="color: #4d4b85;">Salamiyah</span>, Syria
+          </h1>
+        </div>
+      </div>
+      <section id="ge-sect" class="ge-sect">
+        <h1></h1>
+        <div id="slider">
+		      <figure>
+			      <img src="./img/home/ge/1.jpg">
+			      <img src="./img/home/ge/2.jpg">
+			      <img src="./img/home/ge/3.jpg">
+            <img src="./img/home/ge/4.jpg">
+			      <img src="./img/home/ge/5.jpg">
+			      <img src="./img/home/ge/6.jpg">
+		      </figure>
+	      </div>
       </section>
     </main>
   </body>
