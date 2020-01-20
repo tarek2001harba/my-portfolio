@@ -11,59 +11,103 @@
     />
     <style type="text/css">
 
-#slider { 
-    position: relative; 
-    width: 100%; 
-    height: 50vh; 
+#slider {
+  overflow: hidden;
+  margin: auto;
+  width: 50%;
+  max-width: 100%;
+  max-height: 400px;
 }
-
-#slider > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+#slider div {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  font-size: 0;
+  animation: 20s slider infinite;
 }
-
+#slider div img {
+  width: 20%;
+  float: left;
+}
 @keyframes slider {
-	0% {
-		left: 0;
+  0% {
+    left: 0%;
+  }
+  5% {
+    left: 0%;
+  }
+  7.5% {
+    left: -100%;
+  }
+  12.5% {
+    left: -100%;
+  }
+  17.5% {
+    left: -200%;
+  }
+  20% {
+    left: -200%;
+  }
+  25%% {
+    left: -300%;
+  }
+  30%% {
+    left: -300%;
+  }
+  32.5% {
+    left: -400%;
+  }
+  37.5% {
+    left: -400%;
+  }
+  42.5% {
+    left: -500%;
+  }
+  45% {
+    left: -500%;
+  }
+  50% {
+    left: -600%;
+  }
+  55% {
+    left: -600%;
+  }
+  57.5% {
+    left: -700%;
+  }
+  62.5% {
+    left: -700%;
+  }
+  67.5% {
+    left: -800%;
+  }
+  70% {
+    left: -800%;
+  }
+  75% {
+    left: -900%;
+  }
+  80% {
+    left: -900%;
+  }
+  82.5% {
+    left: -1000%;
+  }
+  87.5% {
+    left: -1000%;
+  }
+}
+
+@keyframes fade{
+	0%{
+		opacity:1;
 	}
-	8.3% {
-		left: 0;
+	50%{
+		opacity:0.25;
 	}
-	16.6% {
-		left: -100%;
-	}
-	24.3% {
-		left: -100%;
-	}
-	32.6% {
-		left: -200%;
-	}
-	40.9% {
-		left: -200%;
-	}
-	49.2% {
-		left: -300%;
-	}
-	57.5% {
-		left: -300%;
-	}
-	65.8% {
-		left: -400%;
-	}
-	74.1% {
-		left: -400%;
-	}
-	82.4% {
-		left: -500%;
-	}
-	90.7% {
-		left: -500%;
-	}
-	100% {
-		left: -600%;
+	100%{
+		opacity:1;
 	}
 }
 
@@ -191,19 +235,17 @@
       <section id="ge-sect" class="ge-sect">
         <h1></h1>
         <div id="slider">
-		      <div><img src="./img/home/ge/1-min.jpg"><div/>
-		      <div><img src="./img/home/ge/2-min.jpg"><div/>
-		      <div><img src="./img/home/ge/3-min.jpg"><div/>
-		      <div><img src="./img/home/ge/4-min.jpg"><div/>
-		      <div><img src="./img/home/ge/5-min.jpg"><div/>
-		      <div><img src="./img/home/ge/7-min.jpg"><div/>
-		      <div><img src="./img/home/ge/8-min.jpg"><div/>
-		      <div><img src="./img/home/ge/9-min.jpg"><div/>
-		      <div><img src="./img/home/ge/10-min.jpg"><div/>
-		      <div><img src="./img/home/ge/11-min.jpg"><div/>
-		      <div><img src="./img/home/ge/12-min.jpg"><div/>
-		      <div><img src="./img/home/ge/1-min.jpg"><div/>
-	      </div>
+	      <div><img src="./img/home/ge/9-min.jpg"><div/>
+	      <div><img src="./img/home/ge/1-min.jpg"><div/>
+	      <div><img src="./img/home/ge/2-min.jpg"><div/>
+	      <div><img src="./img/home/ge/3-min.jpg"><div/>
+	      <div><img src="./img/home/ge/4-min.jpg"><div/>
+	      <div><img src="./img/home/ge/5-min.jpg"><div/>
+	      <div><img src="./img/home/ge/6-min.jpg"><div/>
+	      <div><img src="./img/home/ge/7-min.jpg"><div/>
+	      <div><img src="./img/home/ge/8-min.jpg"><div/>
+	      <div><img src="./img/home/ge/9-min.jpg"><div/>
+	 </div>
       </section>
       <div class="city-bg-div">
         <div class="quote-container">
