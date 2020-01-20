@@ -263,7 +263,19 @@ nav {
   border-bottom: 2px solid #4d4b85;
   border-radius: 180px;
 }
-
+.ge-bg-div {
+  height: 75vh;
+  background: url(./img/home/ge/ge-div-background.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.ge-sect {
+  margin: 48px 0px;
+  display: flex;
+  flex-direction: column;i
+  align-items: center;
+}
 .city-bg-div {
   height: 75vh;
   background: url(./img/home/salamiyah.jpg) center no-repeat;
@@ -336,14 +348,6 @@ textarea {
 }
 [type="submit"]:hover {
   background: #4d4b85;
-}
-
-.city-bg-div {
-  height: 75vh;
-  background: url(./img/home/salamiyah.jpg) center no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
 }
 /* ! animations section */
 @keyframes come-from-left {
