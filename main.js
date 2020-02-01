@@ -23,4 +23,10 @@ window.addEventListener("load", () => {
   body.classList.add("scroll-finish");
   preload.classList.add("preload-finish");
   main.classList.add("preload-finish-main");
+  var delayInMilliseconds = 5000; //1 second
+
+  setTimeout(function() {
+    const preload_overlayer = document.querySelector(".overlayer");
+    preload_overlayer.classList.add("preload-finish-overlayer");
+  }, delayInMilliseconds);
 });
