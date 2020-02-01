@@ -780,8 +780,8 @@ textarea {
   position: fixed;
   bottom: 30%;
   left: 50%;
-  z-index: 4;
-  background: #fefefe;
+  z-index: 6;
+  color: #fefefe;
 }
 .loader {
   display: inline-block;
