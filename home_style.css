@@ -543,7 +543,7 @@ nav {
   }
 }
 .slideshow {
-  width: 75%;
+  width: 60%;
   height: 75%;
   overflow: hidden;
   animation: 5s smooth-border infinite;
@@ -566,7 +566,7 @@ nav {
   min-height: 24px;
   border: 0.3vh solid #009775;
   border-radius: 2px;
-  margin: 1.5vw;
+  margin: 1vw;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -781,7 +781,7 @@ textarea {
   transition: opacity 1s ease;
   border: 0px solid #100c08;
   animation: 5s smooth-border infinite;
-  animation-direction: alternate;
+  animation-direction: alternates;
 }
 .loader-text {
   position: absolute;
@@ -884,9 +884,6 @@ textarea {
   }
 }
 @media screen and (max-width: 900px) {
-  .bar {
-    margin: 1vw;
-  }
   .vids {
     flex-direction: column;
   }
@@ -938,6 +935,13 @@ textarea {
   .s-two {
     height: 30%;
   }
+  .bar {
+    margin: 1vw;
+    min-width: 22px;
+    width: 3.6vw;
+    height: 3.7vw;
+    min-height: 16px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -951,13 +955,6 @@ textarea {
   }
 }
 @media screen and (max-width: 450px) {
-  .bar {
-    margin: 1vw;
-    min-width: 22px;
-    width: 3.6vw;
-    height: 3.7vw;
-    min-height: 16px;
-  }
   .vids iframe {
     width: 90%;
     height: 50vmin;
