@@ -779,10 +779,11 @@ textarea {
 .overlayer p  {
   position: fixed;
   bottom: 40%;
-  left: 50%;
+  left: 40%;
   z-index: 6;
   color: #fefefe;
   font-family: "Pacifico", cursive;
+  font-size: 2.7vh;
 }
 .loader {
   display: inline-block;
