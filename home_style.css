@@ -776,6 +776,13 @@ textarea {
   background: #100c08;
   transition: opacity 1s ease;
 }
+.overlayer p  {
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  z-index: 4;
+  background: #fefefe;
+}
 .loader {
   display: inline-block;
   position: fixed;
