@@ -8,3 +8,12 @@ window.addEventListener("scroll", function() {
   prallax(".c-two", window.scrollY, 0.4);
   prallax(".c-three", window.scrollY, 0.6);
 });
+
+$(window).load(function() {
+  $(".loader")
+    .delay(2000)
+    .fadeOut("slow");
+  $("#overlayer")
+    .delay(2000)
+    .fadeOut("slow");
+});
