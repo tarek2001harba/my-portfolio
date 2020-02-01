@@ -9,11 +9,7 @@ window.addEventListener("scroll", function() {
   prallax(".c-three", window.scrollY, 0.6);
 });
 
-$(window).load(function() {
-  $(".loader")
-    .delay(2000)
-    .fadeOut("slow");
-  $("#overlayer")
-    .delay(2000)
-    .fadeOut("slow");
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".overlayer");
+  preload.classList.add("preload-finish");
 });
