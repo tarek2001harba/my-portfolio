@@ -88,6 +88,9 @@ h4,
 h3 {
   font-family: "Pacifico", cursive;
 }
+main{
+  display: none;
+}
 header {
   width: 100%;
   padding-top: 1.2vh;
@@ -382,6 +385,7 @@ nav {
 }
 .work-card-link {
   text-decoration: none;
+  font-size: 3.6vh;
 }
 .work {
   margin: 0px 1.2vh;
@@ -399,6 +403,7 @@ nav {
 }
 .thumbanil-container {
   height: 35vh;
+  max-height: 600px;
   width: 100%;
 }
 .first-project {
@@ -420,6 +425,7 @@ nav {
 /*? work show up info-container */
 .info-container {
   height: 20vh;
+  max-height: 600px;
   padding: 4.8vh;
   color: #fefefe;
   background: #009775;
@@ -434,7 +440,7 @@ nav {
   background: #da291c;
 } */
 .info-container h1 {
-  font-size: 4vh;
+  font-size: 4vmin;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -445,7 +451,6 @@ nav {
   color: #fefefe;
   transition: 0.4s ease-in-out;
   cursor: pointer;
-  font-size: 2.4vh;
   font-weight: 500;
 }
 .work-link:hover {
@@ -779,9 +784,6 @@ textarea {
   justify-content: center;
   background: #100c08;
   transition: opacity 1s ease;
-  border: 0px solid #100c08;
-  animation: 5s smooth-border infinite;
-  animation-direction: alternates;
 }
 .loader-text {
   position: absolute;
@@ -794,6 +796,17 @@ textarea {
   color: #fefefe;
   font-family: "Pacifico", cursive;
   font-size: 2.7vh;
+}
+.loader-text p {
+  position: relative;
+}
+.loader-text p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+  animation: loader-text-anim 5s infinite ease;
+  border-bottom: 5px solid #009775;
 }
 .loader {
   display: inline-block;
@@ -819,6 +832,9 @@ textarea {
 .scroll-finish {
   overflow: visible;
 }
+.preload-finish-main {
+  display: block;
+}
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -840,7 +856,14 @@ textarea {
     transform: rotate(360deg);
   }
 }
-
+@keyframes loader-text-anim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 @keyframes loader-inner {
   0% {
     height: 0%;
@@ -882,6 +905,15 @@ textarea {
   .s-two {
     height: 35%;
   }
+  .info-container {
+    max-height: 300px;
+  }
+  .thumbanil-container {
+    max-height: 300px;
+  }
+  .points {
+    display: none;
+  }
 }
 @media screen and (max-width: 900px) {
   .vids {
@@ -891,9 +923,6 @@ textarea {
     margin-bottom: 4.8vh;
     width: 60vmax;
     height: 50vmin;
-  }
-  .points {
-    display: none;
   }
 }
 @media screen and (max-width: 750px) {
