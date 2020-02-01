@@ -18,5 +18,7 @@ window.addEventListener("scroll", function() {
 
 window.addEventListener("load", () => {
   const preload = document.querySelector(".overlayer");
+  const body = document.querySelector("body");
+  body.classList.add("scroll-finish");
   preload.classList.add("preload-finish");
 });
