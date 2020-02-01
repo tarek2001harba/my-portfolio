@@ -780,7 +780,7 @@ textarea {
 .overlayer p  {
   position: fixed;
   bottom: 40%;
-  left: 40%;
+  left: 45%;
   z-index: 6;
   color: #fefefe;
   font-family: "Pacifico", cursive;
