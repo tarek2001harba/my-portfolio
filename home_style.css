@@ -781,6 +781,7 @@ textarea {
   transition: opacity 1s ease;
   border: 0px solid #100c08;
   animation: 5s smooth-border infinite;
+  animation-direction: alternate;
 }
 .loader-text {
   position: absolute;
