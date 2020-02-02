@@ -20,11 +20,14 @@ window.addEventListener("load", () => {
   const preload = document.querySelector(".overlayer");
   const body = document.querySelector("body");
   const main = document.querySelector("main");
+  const footer = document.querySelector("footer");
   const load_h1 = document.querySelector(".quote-container h1");
   const load_p = document.querySelector(".quote-container p");
   const load_pic_container = document.querySelector(".my-pic-container");
   body.classList.add("scroll-finish");
   preload.classList.add("preload-finish");
+  main.classList.add("preload-finish-main");
+  footer.classList.add("preload-finish-main");
   main.classList.add("preload-finish-main");
   load_h1.classList.add("come-from-left-anim");
   load_p.classList.add("come-from-right-anim");
