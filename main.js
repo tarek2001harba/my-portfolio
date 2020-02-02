@@ -20,9 +20,15 @@ window.addEventListener("load", () => {
   const preload = document.querySelector(".overlayer");
   const body = document.querySelector("body");
   const main = document.querySelector("main");
+  const load_h1 = document.querySelector(".quote-container h1");
+  const load_p = document.querySelector(".quote-container p");
+  const load_pic_container = document.querySelector(".my-pic-container");
   body.classList.add("scroll-finish");
   preload.classList.add("preload-finish");
   main.classList.add("preload-finish-main");
+  load_h1.classList.add("come-from-left-anim");
+  load_p.classList.add("come-from-right-anim");
+  load_pic_container.classList.add("come-from-right-anim");
   var delayInMilliseconds = 5000; //1 second
 
   setTimeout(function() {
